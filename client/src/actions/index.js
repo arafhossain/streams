@@ -1,6 +1,7 @@
-export let signIn = () => {
+export let signIn = (userId) => {
   return {
-    type: 'SIGN_IN'
+    type: 'SIGN_IN',
+    payload: userId
   };
 };
 
