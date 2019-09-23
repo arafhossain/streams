@@ -11,8 +11,13 @@ let PageTwo = () => {
 
 let App = () => {
   return (
-    <div>Hey!</div>
-  );
+    <div>
+    <BrowserRouter>
+      <Route path="/" exact component={PageOne} />
+      <Route path="/pagetwo" component={PageTwo} />
+    </BrowserRouter>
+    </div>
+    );
 };
 
 export default App;
